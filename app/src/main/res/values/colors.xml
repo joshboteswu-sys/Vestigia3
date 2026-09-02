@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/values.xml  (merge into your existing colors.xml / styles.xml, or drop in as-is) -->
+<resources>
+
+    <!-- ===== Colors ===== -->
+    <color name="vestigia_primary">#0D9488</color>
+    <color name="vestigia_dark">#0F172A</color>
+    <color name="vestigia_bg_tint">#E0F2FE</color> <!-- Soft Sky/Teal Tint -->
+    <color name="slate_bg">#F1F5F9</color> <!-- Styled Off-White Background -->
+    <color name="text_muted">#64748B</color>
+    <color name="border_light">#CBD5E1</color>
+    <color name="vestigia_dark_teal">#0E4F45</color>
+    <color name="vestigia_primary_green">#12664F</color>
+    <color name="vestigia_accent_green">#1E8E6E</color>
+    <color name="vestigia_bottom_bar">#0B1F1C</color>
+
+    <color name="vestigia_bg">#FFFFFF</color>
+    <color name="vestigia_card_bg">#F1F1F1</color>
+    <color name="vestigia_card_bg_alt">#E8E8E8</color>
+
+    <color name="vestigia_text_primary">#1A1A1A</color>
+    <color name="vestigia_text_secondary">#6B6B6B</color>
+    <color name="vestigia_hint">#9A9A9A</color>
+
+    <color name="vestigia_pin_red">#D14343</color>
+    <color name="vestigia_white">#FFFFFF</color>
+    <color name="vestigia_error">#C62828</color>
+
+    <!-- ===== Styles ===== -->
+    <style name="VestigiaInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:background">@drawable/bg_field</item>
+        <item name="android:textColor">@color/vestigia_dark</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

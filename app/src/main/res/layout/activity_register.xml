@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_register.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/vestigia_bg_tint">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="40dp">
+
+        <!-- Logo, styled like the highlighted VESTIGIA wordmark on the wireframe -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VESTIGIA"
+            android:textColor="@color/vestigia_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04"
+            android:background="@color/slate_bg"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="28dp"
+            android:text="&#8220;Tracing What&#8217;s Missing&#8221;"
+            android:textStyle="italic"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp" />
+
+        <!-- Card container for the form -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/vestigia_bg"
+            app:strokeColor="@color/border_light"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- First Name -->
+                <EditText
+                    android:id="@+id/etFirstName"
+                    style="@style/VestigiaInput"
+                    android:hint="First Name"
+                    android:inputType="textPersonName" />
+
+                <!-- Last Name -->
+                <EditText
+                    android:id="@+id/etLastName"
+                    style="@style/VestigiaInput"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName" />
+
+                <!-- Middle Initial -->
+                <EditText
+                    android:id="@+id/etMiddleInitial"
+                    style="@style/VestigiaInput"
+                    android:hint="Middle Initial"
+                    android:maxLength="2"
+                    android:inputType="textCapCharacters" />
+
+                <!-- Student ID -->
+                <EditText
+                    android:id="@+id/etStudentId"
+                    style="@style/VestigiaInput"
+                    android:hint="Student ID"
+                    android:inputType="text" />
+
+                <!-- Contact -->
+                <EditText
+                    android:id="@+id/etContact"
+                    style="@style/VestigiaInput"
+                    android:hint="Contact Number"
+                    android:inputType="phone" />
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/VestigiaInput"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/VestigiaInput"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <!-- Confirm Password -->
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    style="@style/VestigiaInput"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/tvError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/vestigia_error"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    tools:text="Passwords do not match" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_button_primary"
+                        android:text="Register"
+                        android:textAllCaps="false"
+                        android:textColor="@color/vestigia_white"
+                        android:textStyle="bold"
+                        android:elevation="0dp" />
+
+                    <Button
+                        android:id="@+id/btnBack"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_button_outline"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/vestigia_dark"
+                        android:textStyle="bold"
+                        android:elevation="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
